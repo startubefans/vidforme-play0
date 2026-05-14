@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Loading Video...
+    </title>
+    <style>
+      body{
+background:#0f172a;
+font-family:Arial, sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+color:white;
+text-align:center;
+}
+
+.container{
+max-width:500px;
+padding:20px;
+}
+
+.title{
+font-size:28px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.subtitle{
+font-size:16px;
+opacity:0.8;
+margin-bottom:25px;
+}
+
+/* progress bar */
+.progress{
+width:100%;
+height:10px;
+background:#1e293b;
+border-radius:10px;
+overflow:hidden;
+margin-bottom:30px;
+}
+
+.progress-bar{
+height:100%;
+width:0%;
+background:linear-gradient(90deg,#ff0066,#ff9900);
+animation:load 3s forwards;
+}
+
+@keyframes load{
+0%{width:0%;}
+100%{width:100%;}
+}
+
+/* tombol utama */
+.cta-btn{
+display:inline-block;
+padding:18px 40px;
+font-size:22px;
+font-weight:bold;
+color:#fff;
+text-decoration:none;
+border-radius:12px;
+background:linear-gradient(45deg,#ff0066,#ff9900);
+box-shadow:0 0 25px rgba(255,0,100,0.8);
+animation:pulse 1.5s infinite;
+transition:0.3s;
+}
+
+.cta-btn:hover{
+transform:scale(1.08);
+box-shadow:0 0 40px rgba(255,150,0,1);
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.06);}
+100%{transform:scale(1);}
+}
+
+/* goyang */
+.shake{
+animation:shake 2s infinite;
+}
+
+@keyframes shake{
+0%{transform:rotate(0deg);}
+25%{transform:rotate(2deg);}
+50%{transform:rotate(-2deg);}
+75%{transform:rotate(2deg);}
+100%{transform:rotate(0deg);}
+}
+
+/* mobile */
+@media(max-width:600px){
+.title{font-size:22px;}
+.cta-btn{font-size:18px;padding:15px 30px;}
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        🎬 Video Ready to Play...
+      </div>
+      <div class="subtitle">
+        Click the button below to watch now
+      </div>
+      <div class="progress">
+        <div class="progress-bar">
+        </div>
+      </div>
+      <a href="https://startubefans.github.io/vidforme0/" class="cta-btn shake">      👉 WATCH THE VIDEO NOW 👈
+</a>
+    </div>
+  </body>
+</html>
